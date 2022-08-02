@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mateoallende1/form-practica/issues"
   },
-  "homepage": "https://github.com/mateoallende1/form-practica#readme"
+  "homepage": "https://github.com/mateoallende1/form-practica#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }
