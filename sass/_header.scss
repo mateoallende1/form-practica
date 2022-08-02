@@ -1,0 +1,43 @@
+
+
+
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100px;
+    background-color: rgb(12, 12, 107);
+    
+}
+
+
+.logo {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.borde-logo {
+    border: solid 1px;
+    padding: 5px;
+}
+
+.nav-bar__pos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.nav-bar__1 {
+    text-decoration: none;
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
