@@ -3,69 +3,53 @@
     box-sizing: border-box;
 }
 
-.todo {
-    width: 100%;
-}
 
-.footer {
-    background-color: rgb(5, 5, 83);
-    height: 90px;
-    max-width: 100%;
-}
 
-.nav-bar {
+header {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    justify-content: space-evenly;
+    height: 100px;
+    background-color: rgb(12, 12, 107);
+    
+}
+
+
+.logo {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 90px;
+    height: 100%;
+    margin-left: 30px;
+}
+
+.borde-logo {
+    border: solid 1px;
+    padding: 5px;
 }
 
 .nav-bar__pos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 160px;
-    margin-right: 60px;
-    justify-content: center;
-    border: solid white 1px;
-    border-radius: 10px;
-    background-color: rgb(30, 30, 132);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 300px;
 }
 
 .nav-bar__1 {
     text-decoration: none;
     color: lightblue;
-    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-}
-
-.logo {
-    text-decoration: none;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.logo-1 {
-    color: white;
-    margin-left: 50px;
-    border: solid 1px white;
-    border-radius: 70%;
-    margin-right: 500px;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(30, 30, 132);
-    color: lightblue;
+    font-size: 20px;
 }
 
 .cuerpo {
     padding-top: 40px;
     background-color: rgb(30, 30, 109);
-    height: 1200px;
-
+    height: 1000px;
+    
 }
 
 
@@ -73,12 +57,12 @@
     height: 550px;
     background-color: rgb(2, 2, 164);
     border-radius: 20px;
-    margin-right: 400px;
-    margin-left: 400px;
+    margin: 6rem auto 8.1rem auto;
     color: white;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    width: 500px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
 }
 
 .iniciar {
@@ -89,6 +73,7 @@
 
 .textos__1 {
     color: lightcoral;
+    width: 450px;
 }
 
 .pregunta {
@@ -111,18 +96,23 @@
     margin-bottom: 10px;
 }
 
+.container-barras {
+    width: 450px;
+}
+
 .barras {
     margin-left: 15px;
     border-radius: 10px;
     height: 30px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 450px;
+    
 }
 
 .boton {
     background-color: lightcoral;
     margin-left: 15px;
-    width: 90%;
+    width: 450px;
     height: 35px;
     border-radius: 10px;
     margin-top: 20px;
@@ -135,16 +125,108 @@
     margin-right: 20px;
     border: solid 2px rgb(60, 60, 230);
     max-width: 100%;
+    width: 450px;
 }
 
 .descripcion-1 {
     margin: 10px;
+    width: 450px;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(12, 12, 107);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.contenedor-redes {
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+
+.copy {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 20px 20px 0;
 }
 
 
 @media (max-width:768px) {
-    .barras {
+    .nav-bar__pos {
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
         width: 100%;
-        color: green;
+        padding-left: 0;
     }
+
+    .nav-bar__1 {
+    width: 90%;
+    font-size: 70%;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: x-large;
+    }
+
+    .card{
+        width: 90%;
+        height: 80%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .container-barras {
+        width: 100%;
+    }
+
+    .barras, .boton {
+        width: 90%;
+    }
+
+    .pregunta {
+        width: 90%;
+        text-align: center;
+        margin-left: 16px;
+    }
+
+    .cuerpo{
+        width: 100%;
+        
+    }
+
+    .descripcion, .descripcion-1 {
+        width: 90%;
+    }
+
+   footer {
+       width: 100%;
+       height: 100%;
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: repeat(2, 1fr);
+   }
+
+   .copy {
+       font-size: 70%;
+       display: flex;
+       justify-content: center;
+       margin: 0;
+   }
+
 }
